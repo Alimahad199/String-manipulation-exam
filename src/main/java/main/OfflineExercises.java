@@ -11,19 +11,23 @@ public class OfflineExercises {
 	// multChar("Hi-There") → "HHHiii---TTThhheeerrreee"
 
 	public String multChar(String input) {
-		String answer ="";
+		String solution="";
+		
+
 		for(int i=0;i<input.length();i++){
 		for(int j=0;j<3;j++) {
-		answer= answer + input.charAt(i);
+		solution=solution+input.charAt(i);
 			
 			}
 		}
 		
 		
-		return answer;
+		return solution;
         
-			
-	}
+		}
+	
+		
+	
 	
 	// Return the string (backwards) that is between the first and last appearance
 	// of "bert"
@@ -38,11 +42,8 @@ public class OfflineExercises {
 
 	public String getBert(String input) {
 		
-		
-		
 		return "";
-	}
-	
+}
 
 	// Given three ints, a b c, one of them is small, one is medium and one is
 	// large. Return true if the three values are evenly spaced, so the
@@ -57,7 +58,37 @@ public class OfflineExercises {
 
 	public boolean evenlySpaced(int a, int b, int c) {
 		
+		boolean atFound=false;
+	//int a=input;
+	//int b=b;
+	//int c=c;
+		  
+	if(b-a==c) {
+		System.out.println(true);
 		
+	}else {
+		System.out.println(false);
+		
+	}
+		 
+		if (a + b==c) { 
+			System.out.println(true);
+		
+			
+	}else{
+		System.out.println(false);
+	}
+	
+	if(c-a==b) {
+		System.out.println(true);
+		
+	}else {
+		System.out.println(false);
+		
+	}
+		
+		
+		return false;
 	}
 
 	// Given a string and an int n, return a string that removes n letters from the 'middle' of the string.
@@ -69,18 +100,10 @@ public class OfflineExercises {
 
 	public String nMid(String input, int a) {
 		return "";
+	
 	}
 	
-	int mid input.length()/2;
-	int number 1 mid - (a/2);
-
-	int number 2 mid +(a+2);
-	string result="";
-	string sub = input.substring(number1,number2 +1);
-	if a>1{
-		result
-		sysout
-	}
+	
 
 	// Given a string, return true if it ends in "dev". Ignore Case
 
@@ -90,11 +113,11 @@ public class OfflineExercises {
 	// endsDev("devisnotcool") → false
 
 	public boolean endsDev(String input) {
+	
 		
-	}
-		String name = input;
-		String tolower = name.toLowerCase();
-		if (tolower.endsWith("dev")) {
+		String call=input;
+		String lower = call.toLowerCase();
+		if (lower.endsWith("dev")) {
 		return true;
 		
 	}
@@ -102,8 +125,8 @@ public class OfflineExercises {
 		
 		return false;
 	
-	}
-	
+}}}
+
 
 	// Given a string, return the length of the largest "block" in the string.
 	// A block is a run of adjacent chars that are the same.
@@ -112,10 +135,10 @@ public class OfflineExercises {
 	// superBlock("abbCCCddDDDeeEEE") → 3
 	// superBlock("") → 0
 
-	public int superBlock(String input) {
-		return -1;
+//	public int superBlock(String input) {
+//		return -1;
 
-	}
+	//}
 	
 	//given a string - return the number of times "am" appears in the String ignoring case -
 	// BUT ONLY WHEN the word "am" appears without being followed or proceeded by other letters
@@ -124,26 +147,12 @@ public class OfflineExercises {
 	//amISearch("I am in Amsterdam am I?") → 2
 	//amISearch("I have been in Amsterdam") → 0
 
-	public int amISearch(String arg1) {
+	//public int amISearch(String arg1) {
 		
-		int count=0;
-		String toLowerCase=arg1.toLowerCase();
-		String[]array= toLowerCase.split(" ");
-		for (String letter :array) {
-			if (letter.contentEquals("am")) {
-				count=count+1;
-			}
-			
-		}
-			return count;
+
+	//	return 0;
 		
-			
-		}
-	
-		
-	
-		
-	
+	//}
 	
 	//given a number 
 	// if this number is divisible by 3 return "fizz"
@@ -154,28 +163,14 @@ public class OfflineExercises {
 	//fizzBuzz(10) → "buzz"
 	//fizzBuzz(15) → "fizzbuzz"
 	
-	public String fizzBuzz(int var1)
+//ublic String fizzBuzz(int arg1) {
 		
-		String name= "";
-		if (var1%3==0) {
-			if(var1%5==0) {
-				name="fizzbuzz";
-		
-		}else {
-			name="fizz";
-			
-		}
-	}else if(var1%5==0) {
-			if(var1%3==0) {
-				name="fizzbuzz";
-			}else {
-				name="buzz";
-			}
-					
-		}
-		return name;
-		}
-	
+//fizzbuzz (int arg1){
+//String call=";
+//if (arg1%3==0) {
+//if(arg1%5==0)
+	//	call=("fizzbuzz")
+		//
 	
 	//Given a string split the string into the individual numbers present
 	//then add each digit of each number to get a final value for each number
@@ -191,12 +186,12 @@ public class OfflineExercises {
 	//largest("15 72 80 164") → 11
 	//largest("555 72 86 45 10") → 15
 	
-	public int largest(String arg1) {
-		return 0;
+	//blic int largest(String arg1) {
+	//eturn 0;
+		
+		
 		
 	
-		
-	}
 	
 	
-	}
+	//
